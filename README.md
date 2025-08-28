@@ -26,36 +26,3 @@ Backend: Python, Flask
 Frontend: HTML, Tailwind CSS, JavaScript
 
 Core AI/NLP: sentence-transformers for semantic embeddings, spacy for NLP tasks, and PyPDF2/pdfplumber for PDF parsing.
-
-🚀 How to Run Locally
-To get this project running on your own machine, follow these steps:
-
-Clone the repository:
-
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
-
-Create and activate a virtual environment:
-
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-
-Run the application (requires two terminals):
-
-In your first terminal, start the Flask backend API:
-
-python api.py
-
-In a second terminal, start the frontend server:
-
-python -m http.server
-
-Open the application: Open your web browser and navigate to http://localhost:8000.
