@@ -1,0 +1,19 @@
+#Flask and web server components
+flask
+flask-cors
+
+#PDF Processing
+pdfplumber
+pypdf2
+
+#NLP and Machine Learning
+numpy
+nltk
+spacy
+sentence-transformers
+torch
+torchvision
+torchaudio
+
+# ... (all your other libraries)
+gunicorn
