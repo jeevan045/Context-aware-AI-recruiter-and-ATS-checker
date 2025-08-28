@@ -5,6 +5,7 @@
 import io
 import re
 import warnings
+import os # <--- THIS LINE IS THE FIX
 from typing import List, Dict, Tuple
 
 import numpy as np
@@ -172,8 +173,6 @@ def analyze_resume():
 
         missing_skills = [s for s in req_skills if s not in set(resume_skills)]
         
-        # --- UPDATED RESPONSE ---
-        # Now includes detailed scores for the frontend
         response_data = {
             "matchScore": round(score * 100, 1),
             "summary": f"The candidate has {years_exp} years of experience and matches {len(resume_skills)} skills. The semantic similarity with the JD is {semantic_sim:.2f}.",
@@ -192,6 +191,4 @@ def analyze_resume():
 
 
 if __name__ == '__main__':
-    # The port is dynamically assigned by Render, default to 5000 for local
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=True, port=5000)
