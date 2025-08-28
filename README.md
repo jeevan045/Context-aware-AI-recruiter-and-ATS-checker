@@ -1,4 +1,5 @@
 Context-Aware AI Recruiter
+
 This project is a smart recruitment tool that moves beyond traditional keyword matching. It leverages Natural Language Processing (NLP) to perform a deep, contextual analysis of a candidate's resume against a job description, providing a more accurate and insightful measure of their suitability for the role.
 
 The application features a clean, modern web interface with drag-and-drop file uploads, and is powered by a Python backend that handles all the complex analysis.
